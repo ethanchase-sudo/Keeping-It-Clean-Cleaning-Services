@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keeping It Clean Cleaning Services — Nashville, TN</title>
+<meta name="description" content="Keeping It Clean Cleaning Services: commercial, office, deep cleaning, floor, carpet, window cleaning and pressure washing in Nashville, Tennessee.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#063775;
+  --navy-deep:#04234b;
+  --navy-ink:#0b1b33;
+  --orange:#FF9126;
+  --orange-soft:#ffe6cc;
+  --paper:#f7f5f1;
+  --paper-2:#efebe4;
+  --line:rgba(6,55,117,.14);
+  --muted:#5a6578;
+  --white:#fdfcfa;
+  --r-lg:28px;
+  --r-md:18px;
+  --display:'Bricolage Grotesque', system-ui, sans-serif;
+  --body:'Figtree', system-ui, sans-serif;
+  --serif:'Instrument Serif', Georgia, serif;
+  --ease:cubic-bezier(.2,.7,.1,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:var(--body);color:var(--navy-ink);background:var(--paper);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+.wrap{width:min(1320px,100% - 48px);margin-inline:auto}
+h1,h2,h3,h4{font-family:var(--display);font-weight:700;letter-spacing:-.025em;line-height:1.02;text-wrap:balance}
+p{text-wrap:pretty}
+em.s{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.01em}
+
+/* eyebrow */
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--navy)}
+.eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--orange);box-shadow:0 0 0 4px rgba(255,145,38,.2)}
+.eyebrow.light{color:#cfe0f7}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:12px;height:56px;padding:0 10px 0 26px;border-radius:999px;font-weight:600;font-size:16px;transition:transform .35s var(--ease),background .3s,color .3s}
+.btn .ico{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;transition:transform .4s var(--ease)}
+.btn:hover .ico{transform:rotate(-45deg)}
+.btn-orange{background:var(--orange);color:var(--navy-ink)}
+.btn-orange .ico{background:var(--navy);color:#fff}
+.btn-orange:hover{background:#ffa043}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy .ico{background:var(--orange);color:var(--navy-ink)}
+.btn-navy:hover{background:var(--navy-deep)}
+.btn-ghost{padding:0 24px;border:1.5px solid var(--line);color:var(--navy)}
+.btn-ghost:hover{border-color:var(--navy)}
+.arrow{width:16px;height:16px}
+
+/* topbar */
+.topbar{background:var(--navy-deep);color:#c9d6ea;font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;height:42px;gap:20px}
+.topbar a:hover{color:#fff}
+.topbar .tb-left{display:flex;gap:26px;align-items:center}
+.topbar .dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--orange);margin-right:8px;vertical-align:middle}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:50;transition:background .3s,box-shadow .3s,backdrop-filter .3s}
+.nav.scrolled{background:rgba(247,245,241,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;transition:height .3s}
+.nav.scrolled .wrap{height:70px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-mark{width:46px;height:46px;border-radius:14px;background:var(--navy);position:relative;display:grid;place-items:center;color:#fff;font-family:var(--display);font-weight:800;font-size:17px;letter-spacing:-.04em}
+.logo-mark::after{content:"";position:absolute;top:7px;right:7px;width:8px;height:8px;border-radius:50%;background:var(--orange)}
+.logo-txt{line-height:1.05}
+.logo-txt b{display:block;font-family:var(--display);font-weight:700;font-size:19px;letter-spacing:-.02em;color:var(--navy)}
+.logo-txt span{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.nav-links{display:flex;gap:6px;align-items:center;background:var(--white);border:1px solid var(--line);border-radius:999px;padding:6px}
+.nav-links a{padding:9px 18px;border-radius:999px;font-weight:500;font-size:15px;color:var(--navy-ink);transition:background .25s,color .25s}
+.nav-links a:hover{background:var(--paper-2)}
+.nav-links a.active{background:var(--navy);color:#fff}
+.nav-cta{display:flex;gap:10px;align-items:center}
+.nav-cta .phone{font-weight:600;color:var(--navy);padding:0 14px}
+.nav-cta .btn{height:50px}
+.nav-cta .btn .ico{width:34px;height:34px}
+.burger{display:none;width:48px;height:48px;border-radius:50%;background:var(--navy);color:#fff;place-items:center}
+
+/* hero */
+.hero{padding:26px 0 0;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.02fr 1fr;gap:28px;align-items:stretch}
+.hero-copy{padding:56px 0 40px;display:flex;flex-direction:column}
+.hero h1{font-size:clamp(52px,7.1vw,112px);color:var(--navy);margin:22px 0 28px;font-weight:800;letter-spacing:-.045em;line-height:.94}
+.hero h1 .line{display:block;overflow:hidden}
+.hero h1 .line>span{display:inline-block;transform:translateY(105%);animation:rise 1s var(--ease) forwards}
+.hero h1 .line:nth-child(2)>span{animation-delay:.12s}
+.hero h1 .line:nth-child(3)>span{animation-delay:.24s}
+.hero h1 em.s{color:var(--orange);font-size:1.08em}
+@keyframes rise{to{transform:none}}
+.hero-lede{font-size:20px;color:var(--muted);max-width:30ch;margin-bottom:36px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-foot{margin-top:auto;padding-top:48px;display:flex;gap:34px;align-items:flex-end;flex-wrap:wrap}
+.hero-foot .hf{border-top:1.5px solid var(--navy);padding-top:14px;min-width:150px}
+.hero-foot .hf b{display:block;font-family:var(--display);font-size:19px;color:var(--navy);letter-spacing:-.01em}
+.hero-foot .hf span{font-size:14px;color:var(--muted)}
+
+.hero-visual{position:relative;min-height:640px}
+.hero-img{position:absolute;inset:0;border-radius:var(--r-lg);overflow:hidden;clip-path:inset(0 0 100% 0 round 28px);animation:reveal 1.3s .2s var(--ease) forwards}
+.hero-img img{width:100%;height:100%;object-fit:cover;transform:scale(1.12);animation:settle 2s .2s var(--ease) forwards}
+@keyframes reveal{to{clip-path:inset(0 0 0 0 round 28px)}}
+@keyframes settle{to{transform:scale(1)}}
+.hero-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,35,75,0) 55%,rgba(4,35,75,.55))}
+.hero-badge{position:absolute;left:-36px;bottom:42px;background:var(--white);border-radius:22px;padding:20px 22px;box-shadow:0 30px 60px -20px rgba(4,35,75,.35);display:flex;gap:16px;align-items:center;max-width:330px;opacity:0;transform:translateY(20px);animation:fadeUp .9s 1.1s var(--ease) forwards;z-index:3}
+.hero-badge .chk{flex:none;width:52px;height:52px;border-radius:16px;background:var(--orange);display:grid;place-items:center;color:var(--navy-ink)}
+.hero-badge p{font-size:15px;line-height:1.35;color:var(--navy-ink)}
+.hero-badge p b{font-family:var(--display);display:block;font-size:18px;color:var(--navy)}
+.hero-tag{position:absolute;top:24px;right:24px;z-index:3;background:rgba(4,35,75,.55);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff;border-radius:999px;padding:10px 18px;font-size:14px;font-weight:500;display:flex;gap:10px;align-items:center;opacity:0;animation:fadeUp .8s 1.3s var(--ease) forwards}
+.hero-tag i{width:8px;height:8px;border-radius:50%;background:var(--orange);animation:pulse 2s infinite}
+.hero-caption{position:absolute;right:28px;bottom:28px;z-index:3;color:#fff;text-align:right;font-family:var(--serif);font-style:italic;font-size:30px;line-height:1.1;opacity:0;animation:fadeUp .8s 1.4s var(--ease) forwards}
+@keyframes fadeUp{to{opacity:1;transform:none}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(255,145,38,.6)}50%{box-shadow:0 0 0 7px rgba(255,145,38,0)}}
+
+/* marquee */
+.marquee{margin-top:64px;background:var(--navy);color:#fff;overflow:hidden;padding:26px 0;position:relative}
+.marquee-track{display:flex;gap:0;width:max-content;animation:scroll 38s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee span{font-family:var(--display);font-weight:600;font-size:clamp(26px,3vw,40px);letter-spacing:-.02em;display:flex;align-items:center;white-space:nowrap}
+.marquee span::after{content:"";width:14px;height:14px;margin:0 38px;background:var(--orange);transform:rotate(45deg);border-radius:3px}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* section base */
+section{position:relative}
+.sec{padding:130px 0}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:64px}
+.sec-head h2{font-size:clamp(40px,4.6vw,72px);color:var(--navy);margin-top:18px}
+.sec-head p{font-size:19px;color:var(--muted);max-width:46ch;justify-self:end}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:center}
+.about-media{position:relative;aspect-ratio:4/5}
+.about-media .m1{position:absolute;inset:0 18% 14% 0;border-radius:var(--r-lg);overflow:hidden}
+.about-media .m2{position:absolute;right:0;bottom:0;width:52%;aspect-ratio:3/4;border-radius:22px;overflow:hidden;border:8px solid var(--paper)}
+.about-media img{width:100%;height:100%;object-fit:cover}
+.about-media .stamp{position:absolute;top:28px;right:4%;width:128px;height:128px;border-radius:50%;background:var(--orange);display:grid;place-items:center;z-index:2}
+.about-media .stamp svg{position:absolute;inset:0;animation:spin 18s linear infinite}
+.about-media .stamp b{font-family:var(--display);font-size:13px;color:var(--navy-ink);text-align:center;line-height:1.1;font-weight:700}
+@keyframes spin{to{transform:rotate(360deg)}}
+.about-copy h2{font-size:clamp(40px,4.4vw,68px);color:var(--navy);margin:18px 0 28px}
+.about-copy .big{font-size:22px;line-height:1.5;color:var(--navy-ink);margin-bottom:22px}
+.about-copy p{color:var(--muted);margin-bottom:18px}
+.quote-line{margin-top:34px;padding:26px 0 0;border-top:1px solid var(--line);font-family:var(--serif);font-style:italic;font-size:30px;line-height:1.2;color:var(--navy)}
+.quote-line small{display:block;font-family:var(--body);font-style:normal;font-size:14px;color:var(--muted);margin-top:10px;letter-spacing:.04em}
+
+/* services */
+.services{background:var(--white);border-radius:48px 48px 0 0}
+.svc-shell{display:grid;grid-template-columns:420px 1fr;gap:40px;align-items:start}
+.svc-list{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.svc-item{display:grid;grid-template-columns:44px 1fr 28px;align-items:center;gap:8px;text-align:left;padding:22px 6px;border-bottom:1px solid var(--line);transition:padding .35s var(--ease),color .3s}
+.svc-item .n{font-size:13px;font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums}
+.svc-item .t{font-family:var(--display);font-size:24px;font-weight:600;letter-spacing:-.02em;color:var(--navy-ink);transition:color .3s}
+.svc-item .pl{width:28px;height:28px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center;transition:all .35s var(--ease)}
+.svc-item:hover{padding-left:14px}
+.svc-item.on .t{color:var(--navy)}
+.svc-item.on .n{color:var(--orange)}
+.svc-item.on .pl{background:var(--orange);border-color:var(--orange);transform:rotate(-45deg)}
+.svc-stage{position:sticky;top:100px;display:grid;grid-template-columns:1.05fr 1fr;border-radius:var(--r-lg);overflow:hidden;background:var(--navy);color:#fff;min-height:600px}
+.svc-photos{position:relative;overflow:hidden}
+.svc-photos img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.08);transition:opacity .7s var(--ease),transform 1.2s var(--ease)}
+.svc-photos img.on{opacity:1;transform:none}
+.svc-detail{padding:46px 44px;display:flex;flex-direction:column}
+.svc-detail .k{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--orange);font-weight:600}
+.svc-detail h3{font-size:40px;margin:14px 0 18px;color:#fff}
+.svc-detail .d{color:#c9d6ea;font-size:17px;margin-bottom:28px}
+.svc-detail h4{font-family:var(--body);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#8ea6c9;font-weight:600;margin-bottom:14px}
+.inc{list-style:none;display:grid;gap:10px}
+.inc li{display:flex;gap:12px;align-items:flex-start;font-size:16px;padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.06);opacity:0;transform:translateX(12px);animation:slideIn .5s var(--ease) forwards}
+.inc li svg{flex:none;margin-top:3px;color:var(--orange)}
+@keyframes slideIn{to{opacity:1;transform:none}}
+.svc-detail .btn{margin-top:auto;align-self:flex-start;margin-top:32px}
+.svc-fade{animation:fadeIn .5s var(--ease)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* pillars */
+.pillars{background:var(--white);padding-top:40px}
+.pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pillar{border-radius:var(--r-lg);padding:38px 34px 34px;background:var(--paper);display:flex;flex-direction:column;min-height:380px;position:relative;overflow:hidden;transition:transform .5s var(--ease)}
+.pillar:hover{transform:translateY(-6px)}
+.pillar .num{font-family:var(--display);font-size:120px;font-weight:800;line-height:.8;letter-spacing:-.06em;color:transparent;-webkit-text-stroke:1.5px rgba(6,55,117,.22)}
+.pillar h3{font-size:30px;color:var(--navy);margin:auto 0 14px}
+.pillar p{color:var(--muted);font-size:16.5px}
+.pillar.dark{background:var(--navy);color:#fff}
+.pillar.dark h3{color:#fff}.pillar.dark p{color:#c9d6ea}
+.pillar.dark .num{-webkit-text-stroke-color:rgba(255,145,38,.6)}
+.pillar.orange{background:var(--orange)}
+.pillar.orange p{color:#3d2a14}.pillar.orange h3{color:var(--navy-ink)}
+.pillar.orange .num{-webkit-text-stroke-color:rgba(11,27,51,.3)}
+
+/* process */
+.process{background:var(--navy-deep);color:#fff;overflow:hidden}
+.process .sec-head h2{color:#fff}
+.process .sec-head p{color:#b3c4de}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid rgba(255,255,255,.14);position:relative}
+.steps .bar{position:absolute;top:-1px;left:0;height:2px;background:var(--orange);width:0;transition:width 1.8s var(--ease)}
+.steps.in .bar{width:100%}
+.step{padding:34px 28px 10px 0}
+.step .sn{display:inline-grid;place-items:center;width:46px;height:46px;border-radius:50%;border:1.5px solid rgba(255,255,255,.25);font-weight:600;font-size:15px;margin-bottom:28px;transition:background .4s,border-color .4s,color .4s}
+.steps.in .step .sn{background:var(--orange);border-color:var(--orange);color:var(--navy-ink)}
+.steps.in .step:nth-child(3) .sn{transition-delay:.4s}
+.steps.in .step:nth-child(4) .sn{transition-delay:.8s}
+.steps.in .step:nth-child(5) .sn{transition-delay:1.2s}
+.step h3{font-size:26px;margin-bottom:12px}
+.step p{color:#b3c4de;font-size:16px}
+.process-img{margin-top:80px;border-radius:var(--r-lg);overflow:hidden;position:relative;height:440px}
+.process-img img{width:100%;height:130%;object-fit:cover;will-change:transform}
+.process-img .ov{position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,35,75,.88) 0%,rgba(4,35,75,.3) 60%,rgba(4,35,75,0));display:flex;align-items:center;padding:0 60px}
+.process-img .ov p{font-family:var(--serif);font-style:italic;font-size:clamp(34px,4vw,58px);line-height:1.05;max-width:13ch}
+.process-img .ov p b{font-family:var(--display);font-style:normal;font-weight:700;letter-spacing:-.03em;color:var(--orange)}
+
+/* quote */
+.quote{background:var(--paper)}
+.q-shell{display:grid;grid-template-columns:1.25fr .75fr;gap:24px;align-items:start}
+.q-form{background:var(--white);border-radius:var(--r-lg);padding:44px;border:1px solid var(--line)}
+.q-step{padding-bottom:30px;margin-bottom:30px;border-bottom:1px dashed var(--line)}
+.q-step:last-of-type{border:0;margin-bottom:10px;padding-bottom:0}
+.q-label{display:flex;gap:12px;align-items:baseline;margin-bottom:16px}
+.q-label i{font-style:normal;font-size:13px;font-weight:700;color:var(--orange)}
+.q-label b{font-family:var(--display);font-size:22px;font-weight:600;color:var(--navy);letter-spacing:-.015em}
+.q-label span{font-size:14px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{padding:12px 18px;border-radius:999px;border:1.5px solid var(--line);font-size:15px;font-weight:500;display:inline-flex;gap:8px;align-items:center;transition:all .25s var(--ease);background:var(--white)}
+.chip:hover{border-color:var(--navy)}
+.chip .cb{width:16px;height:16px;border-radius:5px;border:1.5px solid currentColor;display:grid;place-items:center;opacity:.5}
+.chip.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.chip.on .cb{background:var(--orange);border-color:var(--orange);opacity:1;color:var(--navy-ink)}
+.chip.on.radio{background:var(--orange);border-color:var(--orange);color:var(--navy-ink)}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fields .full{grid-column:1/-1}
+.field label{display:block;font-size:13px;font-weight:600;color:var(--muted);margin-bottom:6px;letter-spacing:.02em}
+.field input,.field textarea{width:100%;font:inherit;font-size:16px;padding:15px 16px;border-radius:14px;border:1.5px solid var(--line);background:var(--paper);color:var(--navy-ink);transition:border-color .2s,background .2s;outline:none}
+.field input:focus,.field textarea:focus{border-color:var(--navy);background:#fff}
+.field textarea{min-height:110px;resize:vertical}
+.q-side{position:sticky;top:100px;display:flex;flex-direction:column;gap:16px}
+.summary{background:var(--navy);color:#fff;border-radius:var(--r-lg);padding:34px}
+.summary h3{font-size:26px;margin-bottom:6px}
+.summary .sub{color:#b3c4de;font-size:15px;margin-bottom:22px}
+.sum-row{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-top:1px solid rgba(255,255,255,.12);font-size:15px}
+.sum-row span{color:#8ea6c9}
+.sum-row b{font-weight:600;text-align:right}
+.sum-svcs{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end}
+.sum-svcs em{font-style:normal;font-size:13px;background:rgba(255,145,38,.18);color:#ffc58c;padding:4px 10px;border-radius:999px}
+.summary .btn{width:100%;justify-content:space-between;margin-top:22px}
+.summary .note{font-size:13px;color:#8ea6c9;margin-top:14px;text-align:center}
+.pricing-note{background:var(--orange-soft);border-radius:var(--r-md);padding:24px 26px}
+.pricing-note b{font-family:var(--display);font-size:19px;color:var(--navy);display:block;margin-bottom:6px}
+.pricing-note p{font-size:15px;color:#5b4126}
+
+/* contact */
+.contact{padding:0 0 24px}
+.contact-card{background:var(--orange);border-radius:48px;padding:90px 70px 70px;position:relative;overflow:hidden}
+.contact-card h2{font-size:clamp(52px,7.5vw,128px);color:var(--navy-ink);font-weight:800;letter-spacing:-.05em;line-height:.9;max-width:11ch}
+.contact-card h2 em.s{color:var(--navy);font-weight:400}
+.c-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:70px}
+.c-tile{background:rgba(255,255,255,.35);border-radius:22px;padding:26px 26px 24px;transition:background .3s,transform .4s var(--ease);display:block}
+.c-tile:hover{background:var(--white);transform:translateY(-4px)}
+.c-tile span{font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:#6b4417}
+.c-tile b{display:block;font-family:var(--display);font-size:clamp(20px,2vw,28px);color:var(--navy-ink);margin-top:10px;letter-spacing:-.02em;word-break:break-word}
+.contact-card .big-k{position:absolute;right:-40px;top:-60px;font-family:var(--display);font-weight:800;font-size:420px;line-height:1;color:rgba(255,255,255,.18);letter-spacing:-.08em;pointer-events:none;user-select:none}
+
+/* footer */
+footer{background:var(--navy-ink);color:#9fb0c8;padding:80px 0 34px;margin-top:-50px;padding-top:130px}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;padding-bottom:60px;border-bottom:1px solid rgba(255,255,255,.1)}
+footer .logo-txt b{color:#fff}
+footer .logo-mark{background:var(--orange);color:var(--navy-ink)}
+footer .logo-mark::after{background:var(--navy)}
+footer p{font-size:15px;margin-top:20px;max-width:34ch}
+footer h5{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#fff;font-weight:600;margin-bottom:18px}
+footer ul{list-style:none;display:grid;gap:10px;font-size:15px}
+footer ul a:hover{color:var(--orange)}
+.f-bottom{display:flex;justify-content:space-between;padding-top:28px;font-size:14px;gap:20px;flex-wrap:wrap}
+.f-word{font-family:var(--display);font-weight:800;font-size:clamp(60px,13.5vw,220px);letter-spacing:-.06em;line-height:.8;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.12);margin-top:50px;white-space:nowrap;overflow:hidden}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(36px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+/* toast */
+.toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,140%);background:var(--navy);color:#fff;padding:16px 24px;border-radius:999px;font-weight:500;box-shadow:0 20px 50px -10px rgba(4,35,75,.5);z-index:100;transition:transform .5s var(--ease);display:flex;gap:10px;align-items:center}
+.toast.show{transform:translate(-50%,0)}
+.toast i{width:10px;height:10px;border-radius:50%;background:var(--orange)}
+
+/* mobile menu */
+.mmenu{position:fixed;inset:0;background:var(--navy);z-index:80;color:#fff;padding:100px 30px 40px;display:flex;flex-direction:column;gap:6px;transform:translateY(-100%);transition:transform .6s var(--ease)}
+.mmenu.open{transform:none}
+.mmenu a{font-family:var(--display);font-size:44px;font-weight:700;letter-spacing:-.03em;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.mmenu .close{position:absolute;top:22px;right:24px;width:48px;height:48px;border-radius:50%;background:var(--orange);color:var(--navy-ink);display:grid;place-items:center}
+
+/* responsive */
+@media (max-width:1180px){
+  .nav-links{display:none}
+  .burger{display:grid}
+  .nav-cta .phone{display:none}
+  .svc-shell{grid-template-columns:1fr}
+  .svc-list{flex-direction:row;overflow-x:auto;border:0;gap:8px;padding-bottom:6px;scrollbar-width:none}
+  .svc-item{flex:none;grid-template-columns:auto auto;border:1.5px solid var(--line);border-radius:999px;padding:10px 18px}
+  .svc-item:hover{padding-left:18px}
+  .svc-item .pl{display:none}
+  .svc-item .t{font-size:17px}
+  .svc-item.on{background:var(--navy);border-color:var(--navy)}
+  .svc-item.on .t{color:#fff}
+  .svc-stage{position:relative;top:0}
+}
+@media (max-width:960px){
+  .wrap{width:min(100% - 36px,1320px)}
+  .topbar .tb-right{display:none}
+  .hero-grid,.about-grid,.q-shell,.sec-head{grid-template-columns:1fr}
+  .sec-head p{justify-self:start}
+  .hero-copy{padding:30px 0 10px}
+  .hero-visual{min-height:480px}
+  .hero-badge{left:16px;bottom:16px;right:16px;max-width:none}
+  .hero-caption{display:none}
+  .sec{padding:90px 0}
+  .svc-stage{grid-template-columns:1fr}
+  .svc-photos{height:300px}
+  .pillar-grid,.steps,.c-grid{grid-template-columns:1fr}
+  .pillar{min-height:280px}
+  .step{padding-right:0}
+  .q-form{padding:28px 22px}
+  .fields{grid-template-columns:1fr}
+  .q-side{position:relative;top:0}
+  .contact-card{padding:60px 26px 30px;border-radius:32px}
+  .f-grid{grid-template-columns:1fr 1fr}
+  .process-img .ov{padding:0 28px}
+  .about-grid{gap:50px}
+}
+@media (max-width:560px){
+  .nav-cta .btn{display:none}
+  .f-grid{grid-template-columns:1fr}
+  .hero-foot{gap:18px}
+  .svc-detail{padding:32px 24px}
+  .svc-detail h3{font-size:32px}
+}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01s!important;transition-duration:.01s!important}}
+</style>
+</head>
+<body>
+
+<!-- SVG sprite -->
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="i-arrow" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 16 16"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 16 16"><path d="M8 3v10M3 8h10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+</svg>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="tb-left">
+      <span><i class="dot"></i>Serving Nashville, Tennessee</span>
+      <a href="tel:+16156090041">(615) 609-0041</a>
+    </div>
+    <div class="tb-right"><a href="/cdn-cgi/l/email-protection#a4c5c1d3cdca96949492e4ddc5cccbcb8ac7cbc9"><span class="__cf_email__" data-cfemail="9afbffedf3f4a8aaaaacdae3fbf2f5f5b4f9f5f7">[email&#160;protected]</span></a></div>
+  </div>
+</div>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Keeping It Clean home">
+      <div class="logo-mark">KiC</div>
+      <div class="logo-txt"><b>Keeping It Clean</b><span>Cleaning Services</span></div>
+    </a>
+    <nav class="nav-links" id="navlinks">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#quote">Get a Quote</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="phone" href="tel:+16156090041">(615) 609-0041</a>
+      <a class="btn btn-orange" href="#quote">Free quote <span class="ico"><svg class="arrow"><use href="#i-arrow"/></svg></span></a>
+      <button class="burger" id="burger" aria-label="Open menu"><svg width="20" height="20" viewBox="0 0 20 20"><path d="M3 6h14M3 14h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<div class="mmenu" id="mmenu">
+  <button class="close" id="mclose" aria-label="Close menu"><svg width="18" height="18" viewBox="0 0 18 18"><path d="M4 4l10 10M14 4L4 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+  <a href="#about">About</a><a href="#services">Services</a><a href="#approach">Approach</a><a href="#quote">Get a Quote</a><a href="#contact">Contact</a>
+</div>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero" data-screen-label="Hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Nashville cleaning services</span>
+      <h1>
+        <span class="line"><span>Keeping</span></span>
+        <span class="line"><span>Nashville</span></span>
+        <span class="line"><span><em class="s">spotless.</em></span></span>
+      </h1>
+      <p class="hero-lede">A service that you can count on. No cleaning job is too big or too small. Just give us a call, and you'll be happy.</p>
+      <div class="hero-actions">
+        <a class="btn btn-navy" href="#quote">Request a free quote <span class="ico"><svg class="arrow"><use href="#i-arrow"/></svg></span></a>
+        <a class="btn btn-ghost" href="#services">Explore services</a>
+      </div>
+      <div class="hero-foot">
+        <div class="hf"><b>Commercial &amp; office</b><span>Workplaces cleaned your way</span></div>
+        <div class="hf"><b>Eco-minded</b><span>Environmentally friendly methods</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-img"><img src="assets/opt/kic-about.jpg" alt="Keeping It Clean professional sweeping an office floor"></div>
+      <div class="hero-tag"><i></i>Now booking across Nashville</div>
+      <div class="hero-caption">Every desk.<br>Every corner.</div>
+      <div class="hero-badge">
+        <div class="chk"><svg width="24" height="24"><use href="#i-check"/></svg></div>
+        <p><b>No job too big or too small</b>From one office to a whole facility.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Office Cleaning</span><span>Deep Cleaning</span><span>Carpet Cleaning</span><span>Window Cleaning</span><span>Pressure Washing</span><span>Floor Care</span><span>Waste Management</span><span>Gutters &amp; Drains</span>
+      <span>Office Cleaning</span><span>Deep Cleaning</span><span>Carpet Cleaning</span><span>Window Cleaning</span><span>Pressure Washing</span><span>Floor Care</span><span>Waste Management</span><span>Gutters &amp; Drains</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="sec" id="about" data-screen-label="About">
+  <div class="wrap about-grid">
+    <div class="about-media rv">
+      <div class="m1"><img src="assets/opt/mop.jpg" alt="Cleaners mopping and wiping down an office"></div>
+      <div class="m2"><img src="assets/opt/wipe.jpg" alt="Gloved hand wiping a table with a microfiber cloth"></div>
+      <div class="stamp">
+        <svg viewBox="0 0 128 128"><defs><path id="circ" d="M64,64 m-50,0 a50,50 0 1,1 100,0 a50,50 0 1,1 -100,0"/></defs><text font-family="Figtree" font-size="11.5" font-weight="700" letter-spacing="3.2" fill="#0b1b33"><textPath href="#circ">NO CORNERS CUT • NASHVILLE, TN • </textPath></text></svg>
+        <b>Keeping<br>It Clean</b>
+      </div>
+    </div>
+    <div class="about-copy">
+      <span class="eyebrow rv">About us</span>
+      <h2 class="rv d1">High-quality cleaning is part of a <em class="s">good workplace.</em></h2>
+      <p class="big rv d2">We provide businesses around Nashville with a bespoke cleaning service that uses the latest techniques while keeping an environmentally friendly attitude.</p>
+      <p class="rv d2">Our professional staff can handle any cleaning task. We're talented, and we bring a wide range of experience from many industries. That range of skills means we never cut corners. Because we care about keeping customers happy, we always do the highest-quality work at the best possible price.</p>
+      <div class="quote-line rv d3">"There's a reason our clients keep coming back."<small>— Keeping It Clean Cleaning Services</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="sec services" id="services" data-screen-label="Services">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow rv">Services</span>
+        <h2 class="rv d1">From the lobby floor <em class="s">to the gutters.</em></h2>
+      </div>
+      <p class="rv d2">Window cleaning, ovens, waste removal, gutters and drain cleaning — we can do it all for you. Select a service to see what's covered.</p>
+    </div>
+
+    <div class="svc-shell">
+      <div class="svc-list" id="svcList"></div>
+      <div class="svc-stage rv">
+        <div class="svc-photos" id="svcPhotos"></div>
+        <div class="svc-detail" id="svcDetail"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PILLARS -->
+<section class="sec pillars" id="approach" data-screen-label="Approach">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow rv">Why Keeping It Clean</span>
+        <h2 class="rv d1">Cleaning that's <em class="s">thought through.</em></h2>
+      </div>
+      <p class="rv d2">Our main focus is that you're happy with our cleaning, and that will never change. Here's what that looks like day to day.</p>
+    </div>
+    <div class="pillar-grid">
+      <div class="pillar rv">
+        <div class="num">01</div>
+        <h3>A tailored approach</h3>
+        <p>Every job gets a plan built for it. We think about the best course of action first, then carry it out with determination, passion and integrity.</p>
+      </div>
+      <div class="pillar dark rv d1">
+        <div class="num">02</div>
+        <h3>Environmentally friendly</h3>
+        <p>We use modern cleaning techniques and stay environmentally friendly at the same time. Your workspace gets cleaner without extra harm to the planet.</p>
+      </div>
+      <div class="pillar orange rv d2">
+        <div class="num">03</div>
+        <h3>Cost-effective &amp; qualified</h3>
+        <p>We're fully qualified and cost-effective. Experienced staff deliver high-quality cleaning at the best possible price.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="sec process" data-screen-label="Process">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow light rv">How it works</span>
+        <h2 class="rv d1">Think it through. <em class="s">Then make it shine.</em></h2>
+      </div>
+      <p class="rv d2">Getting your space cleaned is simple, from your first call to a spotless finish.</p>
+    </div>
+    <div class="steps" id="steps">
+      <div class="bar"></div>
+      <div class="step"><div class="sn">01</div><h3>Reach out</h3><p>Call (615) 609-0041 or send a request. Tell us about your space and what it needs.</p></div>
+      <div class="step"><div class="sn">02</div><h3>We plan it</h3><p>We work out the best course of action for your job before any cleaning starts.</p></div>
+      <div class="step"><div class="sn">03</div><h3>We clean it</h3><p>Our team does the work carefully and never cuts corners.</p></div>
+      <div class="step"><div class="sn">04</div><h3>You're happy</h3><p>Your satisfaction comes first. That's why our clients keep coming back.</p></div>
+    </div>
+    <div class="process-img rv">
+      <img id="parallax" src="assets/opt/vacuum.jpg" alt="Professional vacuuming a bright living space">
+      <div class="ov"><p>No job too <b>big.</b><br>No job too <b>small.</b></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section class="sec quote" id="quote" data-screen-label="Quote">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow rv">Pricing &amp; quotes</span>
+        <h2 class="rv d1">Build your <em class="s">free quote.</em></h2>
+      </div>
+      <p class="rv d2">Each space is different, so we price every job for your needs. Tell us what you need, and we'll get back to you with a quote.</p>
+    </div>
+
+    <div class="q-shell">
+      <form class="q-form rv" id="qform" onsubmit="return false">
+        <div class="q-step">
+          <div class="q-label"><i>01</i><b>What kind of space?</b></div>
+          <div class="chips" data-group="space" data-mode="radio">
+            <button type="button" class="chip radio" data-v="Office">Office</button>
+            <button type="button" class="chip radio" data-v="Commercial building">Commercial building</button>
+            <button type="button" class="chip radio" data-v="Retail / storefront">Retail / storefront</button>
+            <button type="button" class="chip radio" data-v="Home">Home</button>
+            <button type="button" class="chip radio" data-v="Other">Other</button>
+          </div>
+        </div>
+        <div class="q-step">
+          <div class="q-label"><i>02</i><b>Which services?</b><span>Select all that apply</span></div>
+          <div class="chips" data-group="svcs" data-mode="multi" id="qsvcs"></div>
+        </div>
+        <div class="q-step">
+          <div class="q-label"><i>03</i><b>How often?</b></div>
+          <div class="chips" data-group="freq" data-mode="radio">
+            <button type="button" class="chip radio" data-v="One-time">One-time</button>
+            <button type="button" class="chip radio" data-v="Weekly">Weekly</button>
+            <button type="button" class="chip radio" data-v="Every two weeks">Every two weeks</button>
+            <button type="button" class="chip radio" data-v="Monthly">Monthly</button>
+            <button type="button" class="chip radio" data-v="Not sure yet">Not sure yet</button>
+          </div>
+        </div>
+        <div class="q-step">
+          <div class="q-label"><i>04</i><b>Your details</b></div>
+          <div class="fields">
+            <div class="field"><label for="fn">Your name</label><input id="fn" autocomplete="name" placeholder="Full name"></div>
+            <div class="field"><label for="fp">Phone number</label><input id="fp" type="tel" autocomplete="tel" placeholder="(615) 000-0000"></div>
+            <div class="field full"><label for="fe">Email</label><input id="fe" type="email" autocomplete="email" placeholder="you@company.com"></div>
+            <div class="field full"><label for="fm">Tell us about your request</label><textarea id="fm" placeholder="Location, approximate size, anything we should know…"></textarea></div>
+          </div>
+        </div>
+      </form>
+
+      <aside class="q-side">
+        <div class="summary rv d1">
+          <h3>Your request</h3>
+          <p class="sub">Updates as you build it.</p>
+          <div class="sum-row"><span>Space</span><b id="sSpace">—</b></div>
+          <div class="sum-row"><span>Services</span><div class="sum-svcs" id="sSvcs"><b>—</b></div></div>
+          <div class="sum-row"><span>Frequency</span><b id="sFreq">—</b></div>
+          <div class="sum-row"><span>Contact</span><b id="sName">—</b></div>
+          <button class="btn btn-orange" id="sendBtn" type="button">Send request <span class="ico"><svg class="arrow"><use href="#i-arrow"/></svg></span></button>
+          <p class="note">Opens an email to Keeping It Clean. Prefer to talk? <a href="tel:+16156090041" style="color:#fff;text-decoration:underline">Call us</a>.</p>
+        </div>
+        <div class="pricing-note rv d2">
+          <b>Honest, tailored pricing</b>
+          <p>We don't use one-size-fits-all packages. You get a quote based on your space and the services you choose, at the best possible price.</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact" data-screen-label="Contact">
+  <div class="wrap">
+    <div class="contact-card rv">
+      <div class="big-k" aria-hidden="true">KiC</div>
+      <span class="eyebrow" style="color:var(--navy-ink)">Get in touch</span>
+      <h2 style="margin-top:22px">Just give us <em class="s">a call.</em></h2>
+      <div class="c-grid">
+        <a class="c-tile" href="tel:+16156090041"><span>Call</span><b>(615) 609-0041</b></a>
+        <a class="c-tile" href="/cdn-cgi/l/email-protection#69080c1e00075b59595f291008010606470a0604"><span>Email</span><b><span class="__cf_email__" data-cfemail="90f1f5e7f9fea2a0a0a6d0e9f1f8ffffbef3fffd">[email&#160;protected]</span></b></a>
+        <div class="c-tile"><span>Visit</span><b>320 South Shore Dr.<br>Nashville, TN</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <div class="logo"><div class="logo-mark">KiC</div><div class="logo-txt"><b>Keeping It Clean</b><span style="color:#9fb0c8">Cleaning Services</span></div></div>
+        <p>A service that you can count on. No cleaning job is too big or too small.</p>
+      </div>
+      <div><h5>Services</h5><ul id="fSvcs"></ul></div>
+      <div><h5>Company</h5><ul><li><a href="#about">About</a></li><li><a href="#approach">Our approach</a></li><li><a href="#quote">Free quote</a></li><li><a href="#contact">Contact</a></li></ul></div>
+      <div><h5>Contact</h5><ul><li><a href="tel:+16156090041">(615) 609-0041</a></li><li><a href="/cdn-cgi/l/email-protection#60010517090e52505056201901080f0f4e030f0d"><span class="__cf_email__" data-cfemail="8eefebf9e7e0bcbebeb8cef7efe6e1e1a0ede1e3">[email&#160;protected]</span></a></li><li>320 South Shore Drive<br>Nashville, TN</li></ul></div>
+    </div>
+    <div class="f-bottom"><span>© <span id="yr"></span> Keeping It Clean Cleaning Services. Nashville, Tennessee.</span><a href="#top">Back to top ↑</a></div>
+    <div class="f-word" aria-hidden="true">Keeping It Clean</div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"><i></i><span id="toastMsg"></span></div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+const SERVICES = [
+  { id:'commercial', name:'Commercial & Office Cleaning', short:'Office & Commercial', img:'assets/opt/mop.jpg',
+    desc:'A bespoke cleaning service for businesses around Nashville. We help you keep the kind of workplace your team and visitors deserve.',
+    inc:['Office cleaning tailored to your workplace','Floor care throughout the space','Window cleaning','Waste management & removal'] },
+  { id:'deep', name:'Deep Cleaning', short:'Deep Cleaning', img:'assets/opt/wipe.jpg',
+    desc:'A thorough clean that goes well past day-to-day upkeep. We plan the best approach for your space before we start.',
+    inc:['A plan built around your space','Surfaces and fixtures cleaned top to bottom','Ovens cleaned','Latest techniques, environmentally friendly'] },
+  { id:'floors', name:'Floor & Carpet Cleaning', short:'Floors & Carpet', img:'assets/opt/vacuum.jpg',
+    desc:'Floors and carpets carry the most foot traffic. We bring them back so the whole room feels cleaner.',
+    inc:['Carpet cleaning','Hard floor cleaning','Help with high-traffic areas','Commercial and home spaces'] },
+  { id:'windows', name:'Window Cleaning', short:'Windows', img:'assets/opt/kic-about.jpg',
+    desc:'Clean windows make any space feel brighter and well looked after, inside and out.',
+    inc:['Window cleaning','Part of a full commercial service or booked on its own','Careful, professional finish'] },
+  { id:'pressure', name:'Pressure Washing', short:'Pressure Washing', img:'assets/opt/pressure.jpg',
+    desc:'We clean the outside of your property too. Pressure washing removes built-up grime from hard outdoor surfaces.',
+    inc:['Pressure washing','Patios, walkways & outdoor hard surfaces','Gutter cleaning','Drain cleaning'] },
+  { id:'waste', name:'Waste Management & Removal', short:'Waste Removal', img:'assets/opt/kic-hero.jpg',
+    desc:'We take care of the waste side of keeping a building clean, so it never piles up.',
+    inc:['Waste management','Waste removal','Part of an ongoing commercial cleaning plan'] }
+];
+
+const chk = '<svg width="16" height="16"><use href="#i-check"/></svg>';
+const list = document.getElementById('svcList'), photos = document.getElementById('svcPhotos'), detail = document.getElementById('svcDetail');
+SERVICES.forEach((s,i)=>{
+  const b=document.createElement('button');
+  b.className='svc-item'+(i===0?' on':'');
+  b.innerHTML=`<span class="n">0${i+1}</span><span class="t">${s.name}</span><span class="pl"><svg width="12" height="12"><use href="#i-plus"/></svg></span>`;
+  b.onclick=()=>selectSvc(i);
+  b.onmouseenter=()=>{ if(window.matchMedia('(hover:hover) and (min-width:1181px)').matches) selectSvc(i); };
+  list.appendChild(b);
+  const im=document.createElement('img'); im.src=s.img; im.alt=s.name; if(i===0) im.className='on'; photos.appendChild(im);
+});
+let cur=-1;
+function selectSvc(i){
+  if(i===cur) return; cur=i;
+  [...list.children].forEach((c,j)=>c.classList.toggle('on',j===i));
+  [...photos.children].forEach((c,j)=>c.classList.toggle('on',j===i));
+  const s=SERVICES[i];
+  detail.innerHTML=`<div class="svc-fade"><span class="k">Service ${String(i+1).padStart(2,'0')} / ${String(SERVICES.length).padStart(2,'0')}</span>
+    <h3>${s.name}</h3><p class="d">${s.desc}</p><h4>What we take care of</h4>
+    <ul class="inc">${s.inc.map((x,k)=>`<li style="animation-delay:${.08*k+.1}s">${chk}<span>${x}</span></li>`).join('')}</ul></div>
+    <a class="btn btn-orange" href="#quote" data-svc="${s.short}">Quote this service <span class="ico"><svg class="arrow"><use href="#i-arrow"/></svg></span></a>`;
+  detail.querySelector('[data-svc]').onclick=()=>preselect(s.short);
+}
+selectSvc(0);
+
+// footer services
+document.getElementById('fSvcs').innerHTML = SERVICES.map(s=>`<li><a href="#services">${s.short}</a></li>`).join('');
+document.getElementById('yr').textContent=new Date().getFullYear();
+
+// quote builder
+const qsvcs=document.getElementById('qsvcs');
+const qOpts=[...SERVICES.map(s=>s.short),'Ovens','Gutters & Drains'];
+qsvcs.innerHTML=qOpts.map(v=>`<button type="button" class="chip" data-v="${v}"><span class="cb">${chk.replace(/16/g,'10')}</span>${v}</button>`).join('');
+const state={space:'',svcs:new Set(),freq:''};
+document.querySelectorAll('.chips').forEach(g=>{
+  g.addEventListener('click',e=>{
+    const c=e.target.closest('.chip'); if(!c) return;
+    const grp=g.dataset.group;
+    if(g.dataset.mode==='radio'){ [...g.children].forEach(x=>x.classList.toggle('on',x===c)); state[grp]=c.dataset.v; }
+    else { c.classList.toggle('on'); c.classList.contains('on')?state.svcs.add(c.dataset.v):state.svcs.delete(c.dataset.v); }
+    renderSum();
+  });
+});
+function preselect(v){
+  const c=[...qsvcs.children].find(x=>x.dataset.v===v);
+  if(c && !c.classList.contains('on')){ c.classList.add('on'); state.svcs.add(v); renderSum(); }
+}
+['fn','fp','fe'].forEach(id=>document.getElementById(id).addEventListener('input',renderSum));
+function renderSum(){
+  document.getElementById('sSpace').textContent=state.space||'—';
+  document.getElementById('sFreq').textContent=state.freq||'—';
+  document.getElementById('sSvcs').innerHTML=state.svcs.size?[...state.svcs].map(s=>`<em>${s}</em>`).join(''):'<b>—</b>';
+  document.getElementById('sName').textContent=document.getElementById('fn').value||'—';
+}
+function toast(m){const t=document.getElementById('toast');document.getElementById('toastMsg').textContent=m;t.classList.add('show');clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove('show'),3200);}
+document.getElementById('sendBtn').onclick=()=>{
+  const n=fn.value.trim(), p=fp.value.trim(), e=fe.value.trim();
+  if(!n || (!p && !e)){ toast('Please add your name and a phone number or email.'); (n?fp:fn).focus(); return; }
+  const body=`Hello Keeping It Clean,%0D%0A%0D%0AI'd like a free quote.%0D%0A%0D%0ASpace: ${encodeURIComponent(state.space||'-')}%0D%0AServices: ${encodeURIComponent([...state.svcs].join(', ')||'-')}%0D%0AFrequency: ${encodeURIComponent(state.freq||'-')}%0D%0A%0D%0A${encodeURIComponent(fm.value)}%0D%0A%0D%0AName: ${encodeURIComponent(n)}%0D%0APhone: ${encodeURIComponent(p)}%0D%0AEmail: ${encodeURIComponent(e)}`;
+  window.location.href=`mailto:aewin2006@yahoo.com?subject=${encodeURIComponent('Quote request — '+(state.space||'Cleaning'))}&body=${body}`;
+  toast('Opening your email app…');
+};
+
+// nav scroll + active
+const nav=document.getElementById('nav');
+const secs=['about','services','approach','quote','contact'].map(id=>document.getElementById(id));
+const links=[...document.querySelectorAll('#navlinks a')];
+const par=document.getElementById('parallax');
+function onScroll(){
+  nav.classList.toggle('scrolled',scrollY>50);
+  let act=-1; secs.forEach((s,i)=>{ if(s.getBoundingClientRect().top<innerHeight*.4) act=i; });
+  links.forEach((l,i)=>l.classList.toggle('active',i===act));
+  const r=par.parentElement.getBoundingClientRect();
+  if(r.bottom>0 && r.top<innerHeight){ const p=(r.top+r.height)/(innerHeight+r.height); par.style.transform=`translateY(${-p*23}%)`; }
+}
+addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }),{threshold:.15});
+document.querySelectorAll('.rv,#steps').forEach(el=>io.observe(el));
+
+// mobile menu
+const mm=document.getElementById('mmenu');
+document.getElementById('burger').onclick=()=>mm.classList.add('open');
+document.getElementById('mclose').onclick=()=>mm.classList.remove('open');
+mm.querySelectorAll('a').forEach(a=>a.onclick=()=>mm.classList.remove('open'));
+</script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
